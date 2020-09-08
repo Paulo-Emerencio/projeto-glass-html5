@@ -28,6 +28,7 @@ header#cabecalho{
     border-bottom: 1px #606060 solid;
     height: 150px;
     background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 90px;
+    position: relative;
 }
 
 header#cabecalho h1{
@@ -47,16 +48,17 @@ header#cabecalho h2{
 }
 
 header#cabecalho img#icone{
-    position: relative;
+    position: absolute;
     left: 740px;
-    top: -35px;
+    top: 60px;
 }
 
 /* Formatação do menu */
 nav#menu{
     display: block;
-    position: relative;
-    margin: -261px 0px 0px 250px;
+    position: absolute;
+    top: -43px;
+    left: 250px;
 }
 
 nav#menu ul{
@@ -89,6 +91,9 @@ nav#menu a:hover{
     color: #ffffff;
     text-decoration: underline;
 }
+
+/* Formatação da seção 'corpo' */
+
 
 /* Formatação de imagens com legendas */
 figure.foto-legenda{
