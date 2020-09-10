@@ -6,6 +6,7 @@
 }
 
 body{
+    font-family: Arial, sans-serif;
     background-color: #dddddd;
     color: rgba(0, 0, 0, 1)
 }
@@ -23,16 +24,21 @@ p{
     text-indent: 50px;
 }
 
-header#cabecalho img#icone{
-    position: absolute;
-    left: 780px;
-    top: 70px;
+a {
+    color: #606060;
+    text-decoration: none;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
+/* Formatação do header */
 header#cabecalho{
     border-bottom: 1px #606060 solid;
     height: 150px;
     background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 90px;
+    position: relative;
 }
 
 header#cabecalho h1{
@@ -51,7 +57,119 @@ header#cabecalho h2{
     margin-top: 0px;
 }
 
-/* Formatação de imagens com legendas */
+header#cabecalho img#icone{
+    position: absolute;
+    left: 740px;
+    top: 60px;
+}
+
+/* Formatação do nav menu */
+nav#menu{
+    display: block;
+    position: absolute;
+    top: -43px;
+    left: 250px;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover{
+    background-color: #606060;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu a{
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Formatação da section 'corpo' */
+section#corpo{
+    display: block;
+    width: 505px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+/* Formatação do article Notícia Principal */
+article#noticia-principal h2{
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px;
+}
+
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #b6b6b6;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+    font-size: 12pt;
+    color: #606060;
+}
+
+.h3-direita{
+    text-align: right;
+}
+
+/* Formatação da aside Lateral */
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#lateral h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 10px;
+}
+
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
+/* Formatação da figure imagens com legendas */
 figure.foto-legenda{
     position: relative;
     border: 8px solid white;
@@ -80,41 +198,49 @@ figure.foto-legenda:hover figcaption{
     opacity: 1;
 }
 
-/* Formatação do menu */
-nav#menu{
+/* Formatação da Tabela */
+#tabelaspec{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin: 0px auto 0px auto;
+}
+
+#tabelaspec caption{
+    color: #888888;
+    font-size: 14pt;
+    font-weight: bolder;
+}
+
+#tabelaspec caption span{
     display: block;
+    float: right;
+    color: #000000;
+    font-size: 9pt;
+    margin-top: 10px;
 }
 
-nav#menu ul{
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: -20px;
-    left: 300px;
-}
-
-nav#menu li{
-    display: inline-block;
-    background-color: #dddddd;
+#tabelaspec td{
+    border: 1px solid #606060;
     padding: 10px;
-    margin: 2px;
-    transition: background-color 1s;
+    text-align: center;
 }
 
-nav#menu li:hover{
-    background-color: #606060;
-}
-
-nav#menu h1{
-    display: none;
-}
-
-nav#menu a{
-    color: black;
-    text-decoration: none;
-}
-
-nav#menu a:hover{
+.coluna-esquerda{
     color: #ffffff;
-    text-decoration: underline;
+    background-color: #888888;
+    font-weight: bold;
+}
+
+.coluna-direita{
+    background-color: #dddddd;
+}
+
+/* Formatação do Rodapé */
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+    text-align: center;
 }
