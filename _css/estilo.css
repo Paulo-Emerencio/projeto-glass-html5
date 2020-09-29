@@ -105,10 +105,10 @@ nav#menu li:hover a {
 /* Formatação da section 'corpo' */
 section#corpo {
     display: block;
-    width: 505px;
+    width: 500px;
     float: left;
     border-right: 1px solid #606060;
-    padding-right: 15px;
+    padding-right: 10px;
 }
 
 /* Formatação do article Notícia Principal */
@@ -147,7 +147,7 @@ header#cabecalho-artigo h3 {
 /* Formatação da aside Lateral */
 aside#lateral {
     display: block;
-    width: 350px;
+    width: 360px;
     float: right;
     background-color: #dddddd;
     padding: 10px;

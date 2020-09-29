@@ -22,3 +22,17 @@ video#filme {
     left: 88px;
     width: 440px;
 }
+
+video#VideoIndex {
+    display: block;
+    position: relative;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+video#VideoNoticia {
+    display: block;
+    position: relative;
+    top: -15px;
+    width: 360px;
+}
